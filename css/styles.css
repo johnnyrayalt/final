@@ -16,7 +16,7 @@ body {
 }
 
 .each-clock {
-  display: none;
+  /* display: none; */
   text-align: center;
 }
 .clock {
@@ -35,7 +35,6 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: #2F5E78;
   border-radius: 50%;
   transform: translateY(-3px;);
 }
@@ -43,11 +42,31 @@ body {
 .hand {
   height: 10px;
   width: 50%;
+  border-radius: 20%;
   background: #EEDA1D;
   position: absolute;
   top: 50%;
   transform-origin: 100%;
   transform: rotate(90deg);
-  transition: all 1s;
-  transition-timing-function: linear;
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.37, 2.44, 0.58, 1);
+}
+h1 {
+  text-align: center;
+  margin-top: 40px;
+}
+#intro {
+  text-align: center;
+}
+button {
+  min-height: 40px;
+  background-color: #F4B5CF;
+  border-radius: 40%;
+}
+select {
+  min-height: 100px;
+  background-color: #F4B5CF;
+}
+.add-clock {
+  margin-left: 40px;
 }
