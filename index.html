@@ -5,22 +5,35 @@
     <title>International Clock</title>
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-    <script></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
   </head>
   <body>
-    <div class="clock">
-      <div class="face">
-        <div class="hand second-hand">
-
-        </div>
-        <div class="hand minute-hand">
-
-        </div>
-        <div class="hand hour-hand">
-
-        </div>
-      </div>
+    <header>
+      <h1>International Clock</h1>
+      <p id="intro">
+        Choose a city. See what time it is there.
+      </p>
+    </header>
+    <div class="add-clock">
+      <form id="form">
+        <select id="city">
+          <option value="portland">
+            Portland
+          </option>
+          <<option value="miami">
+            Miami
+          </option>
+          <option value="tokyo">
+            Tokyo
+          </option>
+          <<option value="paris">Paris</option>
+        </select>
+        <button type="submit" id="submit">Add Clock</button>
+      </form>
+    </div>
+    <div class="each-clock">
+      
     </div>
 
   </body>
